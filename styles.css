@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    font-family: Roboto, sans-serifs;
+    overflow-x: hidden; 
+}
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 15%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-items{
+    display: flex;
+    color: gray;;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav .navbrand{
+     width: 30px;
+}
+nav .navlink{ 
+    margin-left:25px;
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+}
+nav .navlink input{
+    border: none;
+    font-size: 15px;
+    border-bottom: 2px solid gray;
+    outline: none;
+    width: 85%;
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: rgb(68, 68, 68);
+}
+nav .navlink:hover:not(.navlink:nth-child(4)){
+    color: rgb(61, 61, 61);
+    border-bottom: 2px solid gray;
+}
+section p, footer p{
+    border-left: 2px solid;
+    padding: 5px 25px ;
+    margin: 40px auto ;
+    line-height: 1.3;
+    color: rgb(82, 82, 82);
+    font-weight: 400;
+}
+h1{ 
+    font-size: 2.5rem;
+}
+#section1{
+    padding: 100px 15%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative; 
+}
+#section1 .apple-watch-image{
+    position: absolute;
+    width: 550px;
+    right: -15%;
+}
+#section1 .apple-watch-image  img{
+    max-width: 100%;
+}
+
+#section1 .freedom-call button,
+#section3 button,
+footer button{
+    padding:  8px 15px;
+    background-color: rgb(202, 71, 71);
+    color: aliceblue;
+    border: none;
+    font-size: 9pt;
+    font-weight: 600;
+}
+#section1 .freedom-call button:hover,
+#section3 button:hover,
+footer button:hover{
+    background-color: rgb(158, 47, 47);
+}
+#section2{
+    padding: 0 15%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+}
+#section2 p{
+    padding: 0;
+    border: none;
+}
+#section2 .swipe-display {
+    display: flex;
+    gap: 10px;;
+}
+#section2 .swipe-display div{
+    margin-top: 10px;
+    width: 7px;
+    height: 7px;
+    background-color: rgb(175, 175, 175);
+    border-radius: 100%;
+}
+#section2 .learn-more {
+    margin-top: 20px;
+    align-items: center;
+    display:flex;
+    gap: 20px;
+    width: 80%;
+}
+
+#section2 .learn-more .learn-more-line{
+    background-color: rgb(204, 42, 42);
+    width: 40px;
+    height: 2px;
+}
+#section2 .learn-more:hover .learn-more-line{
+    width: 50px;
+}
+span{ 
+    color: rgb(204, 42, 42);; font-weight: 600;
+}
+#section3{
+    padding: 50px 15%;
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    justify-content: space-between;
+}
+#section3 .nike-band{ 
+    align-content: center;
+}
+#section3 div:nth-child(2){
+    text-align: right;
+}
+#section3 img{
+    width: 350px;
+}
+footer{
+    background-image: url("img/runners.jpg");
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 200px;
+    color:  white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 2;
+}
+footer p{
+    color:  rgb(255, 255, 255); 
+}
+
+@media (max-width: 992px) {
+
+#section1 {
+    padding: 80px 10% 40px;
+}
+#section2, #section3 {
+    padding: 20px 10%;
+}
+#section1 .apple-watch-image{
+    position: absolute;
+    width: 420px;
+    right: -10%;
+    bottom: 0;
+}
+ }
+@media (max-width: 768px) {
+    #section1 {
+    padding: 40px 10%;
+}
+  #section1 .apple-watch-image{
+    width: 350px;
+    bottom: 5%;
+}
+#section2 div{
+    margin-bottom: 20px;
+ }
+#section2, #section3 {
+    display: block;
+}
+#section2 p{
+    margin: 10px auto ;
+}
+#section3 img
+ {
+    margin-top: 30px;
+    width: 100%;
+}
+footer{
+    display: block;
+    padding: 100px;
+}
+section p, footer p{
+    padding: 5px;
+}
+}
+@media (max-width: 576px) {
+.container {
+    padding: 10px 5%;
+}
+nav .navlink, nav .navlink input{ 
+    margin-left:10px;
+    font-size: .9rem;
+}
+
+#section1, #section2{
+    display: block;
+}
+#section1 .apple-watch-image {
+    margin: 20px auto 0;
+    display: block;
+    width: 50%;
+    position: static;
+}
+  footer{
+    padding: 50px;
+}
+ }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+
+
+
